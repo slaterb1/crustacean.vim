@@ -632,3 +632,6 @@ exec "highlight diffIndexLine ctermfg=9 guifg=" . s:crimson
 exec "highlight diffLine ctermfg=12 guifg=" . s:light_blue
 exec "highlight diffRemoved ctermfg=1 guifg=" . s:red
 exec "highlight diffSubname ctermfg=12 guifg=" . s:light_blue
+
+" specific highlight pieces
+hi Todo guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=bold cterm=bold
