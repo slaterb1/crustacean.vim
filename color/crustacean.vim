@@ -1,8 +1,9 @@
 " Dark Vim/Neovim color scheme.
 "
-" Note: Inspiration taken from: monokai, sunburst xoria256 and One Dark themes.
+" Note: This was a fusion of tender and moonfly, with minor personal touches
+" for Rust.
 "
-" URL:     github.com/bluz71/vim-moonfly-colors
+" URL:     github.com/slaterb1/crustacean.vim
 " License: MIT (https://opensource.org/licenses/MIT)
 
 highlight clear
@@ -238,6 +239,7 @@ exec "highlight rubyResponse ctermfg=6 guifg=" . s:turquoise
 exec "highlight rubyRoute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
+" Left this in from moonfly to slightly distinguish eruby from ruby.
 augroup MoonflyRubyAutocmds
     autocmd!
     " Use different colors when in Ruby and eRuby files for 'rubyConstant'.
