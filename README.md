@@ -1,5 +1,7 @@
 # crustacean.vim
 A dark vim/neovim colorscheme. The theme is a combination of `bluz71/vim-moonfly-colors` and `tender`, with a smattering of adjustments to fit the Rust styling that I liked best.
+- [moonfly](https://github.com/bluz71/vim-moonfly-colors)
+- [tender](https://github.com/jacoborus/tender.vim)
 
 ![rust_1](screenshots/crustacean_1.png)  
 ![rust_2](screenshots/crustacean_2.png)
