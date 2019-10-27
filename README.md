@@ -3,8 +3,11 @@ A dark vim/neovim colorscheme. The theme is a combination of `bluz71/vim-moonfly
 
 ## Installation
 Vundle  
+Add the following to your `.vimrc`:  
 ```
 Plugin 'slaterb1/crustacean.vim'
 ```
+
+Then run `PluginInstall`.
 
 Add `crustacean.vim` to your `~/.vim/colors/` directory to enable setting `colorscheme crustacean` in your `.vimrc`.
