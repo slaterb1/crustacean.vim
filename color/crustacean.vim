@@ -12,13 +12,6 @@ if exists("syntax_on")
 endif
 let g:colors_name="crustacean"
 
-" By default do not color the cursor.
-" By default use the moonfly color palette in the `:terminal`.
-" By default do not underline matching parentheses.
-let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
-let g:moonflyTerminalColors      = get(g:, "moonflyTerminalColors", 1)
-let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
-
 let s:term_back   = "#282828" " term_back 
 let s:term_text   = "#eeeeee" " text_text
 let s:black       = "#080808" " black       = 232
@@ -54,35 +47,6 @@ let s:string      = "#d3b987" " beize
 let s:boolean     = "#ffc24b" " goldenrod
 let s:deep_pink   = "#ff005f" " deep_pink   = 197
 let s:cyan        = "#00ffff" " cyan        = 51
-
-" Specify the the colors used by the inbuilt terminal of Neovim and Vim.
-if g:moonflyTerminalColors
-    if has("nvim")
-        let g:terminal_color_0  = "#373c40"
-        let g:terminal_color_1  = "#ff5454"
-        let g:terminal_color_2  = "#8cc85f"
-        let g:terminal_color_3  = "#e3c78a"
-        let g:terminal_color_4  = "#80a0ff"
-        let g:terminal_color_5  = "#ce76e8"
-        let g:terminal_color_6  = "#7ee0ce"
-        let g:terminal_color_7  = "#de935f"
-        let g:terminal_color_8  = "#f09479"
-        let g:terminal_color_9  = "#f74782"
-        let g:terminal_color_10 = "#42cf89"
-        let g:terminal_color_11 = "#cfcfb0"
-        let g:terminal_color_12 = "#78c2ff"
-        let g:terminal_color_13 = "#ae81ff"
-        let g:terminal_color_14 = "#85dc85"
-        let g:terminal_color_15 = "#e2637f"
-    else
-        let g:terminal_ansi_colors = [
-                    \ "#373c40", "#ff5454", "#8cc85f", "#e3c78a",
-                    \ "#80a0ff", "#ce76e8", "#7ee0ce", "#de935f",
-                    \ "#f09479", "#f74782", "#42cf89", "#cfcfb0",
-                    \ "#78c2ff", "#ae81ff", "#85dc85", "#e2637f"
-                    \]
-    endif
-endif
 
 " Background and text.
 exec "highlight Normal ctermbg=232 guibg=" . s:term_back . "  ctermfg=251 guifg=" . s:term_text
@@ -185,11 +149,7 @@ exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
 exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
 exec "highlight LineNr ctermbg=bg guibg=bg ctermfg=241 guifg=" . s:grey241
-if g:moonflyCursorColor
-    exec "highlight Cursor ctermfg=bg ctermbg=4 guifg=bg guibg=" . s:blue
-else
-    exec "highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
-endif
+exec "highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 exec "highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " cterm=none gui=none"
 exec "highlight CursorColumn ctermbg=234 guibg=" . s:grey234 . " cterm=none"
@@ -199,11 +159,7 @@ exec "highlight FoldColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=
 exec "highlight SignColumn ctermbg=bg guibg=bg ctermfg=14 guifg=" . s:light_green
 exec "highlight Todo ctermbg=3 guibg=" . s:khaki . " ctermfg=bg guifg=bg"
 exec "highlight SpecialKey ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
-if g:moonflyUnderlineMatchParen
-    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson . " cterm=underline gui=underline"
-else
-    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson
-endif
+exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson
 exec "highlight Ignore ctermfg=12 guifg=" . s:light_blue
 exec "highlight Underlined ctermfg=10 guifg=" . s:emerald . " cterm=none gui=none"
 exec "highlight QuickFixLine ctermbg=237 guibg=" . s:grey237 . " cterm=none"
