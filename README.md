@@ -3,8 +3,8 @@ A dark vim/neovim colorscheme. The theme is a combination of `bluz71/vim-moonfly
 - [moonfly](https://github.com/bluz71/vim-moonfly-colors)
 - [tender](https://github.com/jacoborus/tender.vim)
 
-![rust_1](screenshots/crustacean_1.png)  
-![rust_2](screenshots/crustacean_2.png)
+![](https://slaterb1-github-resources.s3.amazonaws.com/crustacean_1.png)  
+![](https://slaterb1-github-resources.s3.amazonaws.com/crustacean_2.png)
 
 ## Installation
 **Vundle**  
