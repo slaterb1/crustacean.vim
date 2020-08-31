@@ -13,7 +13,7 @@ if exists("syntax_on")
 endif
 let g:colors_name="crustacean"
 
-let s:term_back   = "#282828" " term_back 
+let s:term_back   = "#1d1f28" " term_back 
 let s:term_text   = "#eeeeee" " text_text
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
